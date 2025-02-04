@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <!-- Name Input -->
+        <label for="uname">Enter Name:</label>
+        <input type="text" name="name1" id="uname" size="25" maxlength="4" placeholder="Enter your first name" required>
+        <br><br>
+
+        <!-- Password Input -->
+        <label for="pass">Enter Password:</label>
+        <input type="password" name="password1" id="pass" placeholder="Enter password" required>
+        <br><br>
+
+        <!-- Email Input -->
+        <label for="email">Enter Email:</label>
+        <input type="email" name="email1" id="email" placeholder="Enter Email" required>
+        <br><br>
+
+        <!-- Feedback Textarea -->
+        <label for="feedback">Enter feedback:</label><br>
+        <textarea name="feedback" id="feedback" rows="5" cols="30">Positive review</textarea>
+        <br><br>
+
+        <!-- Hobby Checkboxes -->
+        <label>Choose your hobby: </label><br>
+        <input type="checkbox" name="hobby" id="hobby-cook" value="cook">
+        <label for="hobby-cook">Cooking</label>
+        <input type="checkbox" name="hobby" id="hobby-sing" value="sing">
+        <label for="hobby-sing">Singing</label>
+        <input type="checkbox" name="hobby" id="hobby-dance" value="dance">
+        <label for="hobby-dance">Dancing</label>
+        <br><br>
+
+        <!-- Program Radio Buttons -->
+        <label>Choose your program: </label><br>
+        <input type="radio" name="program" id="pro-btech" value="btech">
+        <label for="pro-btech">B.Tech</label>
+        <input type="radio" name="program" id="pro-bca" value="bca">
+        <label for="pro-bca">BCA</label>
+        <input type="radio" name="program" id="pro-bpt" value="bpt">
+        <label for="pro-bpt">BPT</label>
+        <br><br>
+        <!-- select button -->
+        <label for="Statesel">Select state:</label>
+        <select name="Statesel" id="Statesel" size="3" multiple>
+            <!-- option button -->
+            <option value="state">Choose your state</option>
+            <option value="Punjab">punjab</option>
+            <option value="Kr"selected>Kerla</option>
+            <option value="Hp">Himachal</option>
+            <option value="hr">Haryana</option>
+
+        </select>
+        <br><br>
+        <!-- file button -->
+        <label for="filesel">Choose file:</label>
+        <input type="file" name="filesel" id="filesel">
+        <br><br>
+        <!-- Submit Button -->
+        <input type="submit" name="submitform" id="submitform" value="Submit Form">
+        <input type="reset" name="Reset" id="resetform" value="Reset form">
+        <!-- image button -->
+        <input type="image" name="imgbtn" id="imgbtn" src="button - Copy.jpg" width="90" height="90">
+    </form>
+</body>
+
+</html>
